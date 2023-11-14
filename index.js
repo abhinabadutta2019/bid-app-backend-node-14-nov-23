@@ -13,7 +13,7 @@ const savedData = fs.readFileSync("data.json");
 const objectData = JSON.parse(savedData);
 
 app.use(cors());
-
+//
 function findProduct(nameKey, myArray, last_bidder, amount) {
   for (let i = 0; i < myArray.length; i++) {
     if (myArray[i].name === nameKey) {
