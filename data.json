@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "name": "Audi 250",
+      "price": "5000001",
+      "owner": "admiralty20",
+      "last_bidder": "abhinaba"
+    },
+    {
+      "name": "Lamborghini S50",
+      "price": "200000",
+      "owner": "susaske40",
+      "last_bidder": "geraldt01"
+    },
+    {
+      "name": "Ferrari F560",
+      "price": "100000",
+      "owner": "samson35",
+      "last_bidder": "admiralty20"
+    },
+    {
+      "name": "fanta",
+      "price": "100",
+      "owner": "abhinaba"
+    }
+  ]
+}
