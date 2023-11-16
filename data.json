@@ -2,9 +2,9 @@
   "products": [
     {
       "name": "Audi 250",
-      "price": "5000001",
+      "price": "5000005",
       "owner": "admiralty20",
-      "last_bidder": "abhinaba"
+      "last_bidder": "harrry1"
     },
     {
       "name": "Lamborghini S50",
@@ -19,9 +19,14 @@
       "last_bidder": "admiralty20"
     },
     {
-      "name": "fanta",
+      "name": "witch",
       "price": "100",
-      "owner": "abhinaba"
+      "owner": "harrry1"
+    },
+    {
+      "name": "sfBay",
+      "price": "11",
+      "owner": "harrry1"
     }
   ]
 }
