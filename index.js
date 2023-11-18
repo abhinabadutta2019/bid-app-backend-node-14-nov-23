@@ -8,8 +8,13 @@ const fs = require("fs");
 const socketIO = require("socket.io")(http, {
   cors: {
     origin: "http://localhost:3048",
+    methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
   },
 });
+//
+// Enable CORS for all routes
+app.use(cors());
+//
 const savedData = fs.readFileSync("data.json");
 const objectData = JSON.parse(savedData);
 
