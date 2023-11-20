@@ -17,9 +17,20 @@ app.use(cors());
 //
 const savedData = fs.readFileSync("data.json");
 const objectData = JSON.parse(savedData);
-
-// console.log(savedData, "savedData");
-// console.log(objectData, "objectData");
+//
+socketIO.on("connection", (socket) => {
+  console.log(`⚡: ${socket.id} user just connected!`);
+  //
+  // Emit a custom event to notify the frontend about the new user
+  socketIO.emit("userConnected", socket.id);
+  //
+  socket.on("disconnect", () => {
+    console.log("🔥: A user disconnected");
+    //
+    // Emit a custom event to notify the frontend about the disconnected user
+    socketIO.emit("userDisconnected", socket.id);
+  });
+});
 
 //route
 app.get("/api", (req, res) => {
