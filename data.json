@@ -1,32 +1,30 @@
-{
-  "products": [
-    {
-      "name": "Audi 250",
-      "price": "5000005",
-      "owner": "admiralty20",
-      "last_bidder": "harrry1"
-    },
-    {
-      "name": "Lamborghini S50",
-      "price": "200000",
-      "owner": "susaske40",
-      "last_bidder": "geraldt01"
-    },
-    {
-      "name": "Ferrari F560",
-      "price": "100000",
-      "owner": "samson35",
-      "last_bidder": "admiralty20"
-    },
-    {
-      "name": "witch",
-      "price": "100",
-      "owner": "harrry1"
-    },
-    {
-      "name": "sfBay",
-      "price": "11",
-      "owner": "harrry1"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Loki",
+    "price": "11",
+    "owner": "Avengers",
+    "last_bidder": ""
+  },
+  {
+    "id": 2,
+    "name": "Thor",
+    "price": "12",
+    "owner": "Avengers",
+    "last_bidder": ""
+  },
+  {
+    "id": 3,
+    "name": "Harry",
+    "price": "13",
+    "owner": "Hogwards",
+    "last_bidder": ""
+  },
+  {
+    "id": 4,
+    "name": "Ron",
+    "price": "14",
+    "owner": "Hogwards",
+    "last_bidder": ""
+  }
+]
