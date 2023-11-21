@@ -1,6 +1,8 @@
 import fs from "fs";
 import { Router } from "express";
 const router = Router();
+//
+import { socketIO } from "../index.js";
 //route
 router.get("/", (req, res) => {
   const data = fs.readFileSync("data.json");
