@@ -33,5 +33,12 @@
     "price": "14",
     "owner": "Hogwards",
     "last_bidder": ""
+  },
+  {
+    "id": 6,
+    "name": "Limca",
+    "price": "12",
+    "owner": "Coca",
+    "last_bidder": ""
   }
 ]
