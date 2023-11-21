@@ -3,11 +3,15 @@ import cors from "cors";
 import fs from "fs";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import { productRouter } from "./routers/user";
-const app = express();
-const http = require("http").Server(app);
+import { productRouter } from "./routers/product.js";
+import http from "http";
 
-const socketIO = require("socket.io")(http, {
+const app = express();
+const server = http.createServer(app);
+import { Server } from "socket.io";
+
+const socketIO = new Server(server, {
+  // Use the Server class
   cors: {
     origin: "http://localhost:3048",
     methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
@@ -65,6 +69,6 @@ app.use("/product", productRouter);
 //
 const PORT = process.env.PORT || 4000;
 //
-http.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
