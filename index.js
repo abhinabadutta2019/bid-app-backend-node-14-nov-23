@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const http = require("http").Server(app);
-const PORT = 4000;
 const fs = require("fs");
+const dotenv = require("dotenv");
 
 const socketIO = require("socket.io")(http, {
   cors: {
@@ -17,6 +17,8 @@ app.use(cors());
 //
 // Enable JSON parsing middleware
 app.use(express.json());
+//
+dotenv.config();
 //
 const savedData = fs.readFileSync("data.json");
 const objectData = JSON.parse(savedData);
@@ -77,9 +79,9 @@ app.post("/api/add-product", (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
-
 //
-
+const PORT = process.env.PORT || 4000;
+//
 http.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });

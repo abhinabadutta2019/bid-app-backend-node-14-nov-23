@@ -26,5 +26,12 @@
     "price": "14",
     "owner": "Hogwards",
     "last_bidder": ""
+  },
+  {
+    "id": 5,
+    "name": "Fanta",
+    "price": "14",
+    "owner": "Hogwards",
+    "last_bidder": ""
   }
 ]
